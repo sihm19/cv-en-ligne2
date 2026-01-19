@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CV - One Page</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="./scripts/main.js"></script>
+</head>
+
+<body>
+  <!-- Header / Navbar -->
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="#home">MonCV</a>
+
+      <button id="btnMenu" class="btn-menu" aria-label="Ouvrir le menu">
+        ☰
+      </button>
+
+      <nav id="menu" class="menu">
+        <a href="#about">À propos</a>
+        <a href="#skills">Compétences</a>
+        <a href="#projects">Projets</a>
+        <a href="#experience">Expérience</a>
+        <a href="#education">Formation</a>
+        <a href="#contact">Contact</a>
+        <button id="btnTheme" class="btn-theme" type="button" aria-label="Changer le thème">
+          🌙
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="home" class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="badge">Développeuse Web Junior</p>
+        <h1>Salut, moi c’est <span class="accent">Prénom Nom</span>.</h1>
+        <p class="subtitle">
+          Je crée des sites web modernes (HTML, CSS, JavaScript) et je suis en formation pour devenir développeuse.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#contact">Me contacter</a>
+          <a class="btn" href="#projects">Voir mes projets</a>
+        </div>
+
+        <div class="hero-info">
+          <div class="info-card">
+            <span class="info-title">📍 Ville</span>
+            <span class="info-text">Bruxelles / Amsterdam</span>
+          </div>
+          <div class="info-card">
+            <span class="info-title">📧 Email</span>
+            <span class="info-text">prenom.nom@email.com</span>
+          </div>
+          <div class="info-card">
+            <span class="info-title">💼 LinkedIn</span>
+            <span class="info-text">linkedin.com/in/tonprofil</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-card">
+        <div class="avatar" aria-label="Photo de profil (placeholder)">PN</div>
+        <h2>Prénom Nom</h2>
+        <p class="muted">Junior Web Developer</p>
+        <ul class="mini-list">
+          <li>✅ HTML / CSS / JS</li>
+          <li>✅ Bases Git / GitHub</li>
+          <li>✅ Motivation & apprentissage</li>
+        </ul>
+        <a class="btn primary full" href="#contact">Disponible</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Sections -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>À propos</h2>
+      <p class="lead">
+        Ici tu peux écrire un petit résumé : ton objectif, tes qualités, ton parcours.
+      </p>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>Ce que je recherche</h3>
+          <p>
+            Stage / Alternance / Premier emploi en développement web.
+            J’aime apprendre et construire des interfaces propres et accessibles.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Atouts</h3>
+          <ul class="list">
+            <li>Organisation, autonomie</li>
+            <li>Curiosité technique</li>
+            <li>Bonne communication</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section alt">
+    <div class="container">
+      <h2>Compétences</h2>
+      <p class="lead">Barres de progression (tu peux ajuster les %).</p>
+
+      <div class="skills">
+        <div class="skill">
+          <div class="skill-top">
+            <span>HTML</span>
+            <span class="percent">80%</span>
+          </div>
+          <div class="bar"><div class="fill" data-level="80"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-top">
+            <span>CSS</span>
+            <span class="percent">70%</span>
+          </div>
+          <div class="bar"><div class="fill" data-level="70"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-top">
+            <span>JavaScript</span>
+            <span class="percent">55%</span>
+          </div>
+          <div class="bar"><div class="fill" data-level="55"></div></div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-top">
+            <span>Git / GitHub</span>
+            <span class="percent">50%</span>
+          </div>
+          <div class="bar"><div class="fill" data-level="50"></div></div>
+        </div>
+      </div>
+
+      <div class="card tip">
+        <strong>Astuce :</strong> Pour ajouter une compétence, duplique un bloc “skill”.
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projets</h2>
+      <p class="lead">3 exemples (remplace par tes vrais projets).</p>
+
+      <div class="grid-3">
+        <article class="card project">
+          <h3>Portfolio</h3>
+          <p>Un site vitrine pour présenter mes projets et mon profil.</p>
+          <div class="tags">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noreferrer">Démo</a>
+            <a href="#" target="_blank" rel="noreferrer">Code</a>
+          </div>
+        </article>
+
+        <article class="card project">
+          <h3>App To-Do</h3>
+          <p>Ajout, suppression et sauvegarde des tâches (localStorage).</p>
+          <div class="tags">
+            <span class="tag">JavaScript</span><span class="tag">UI</span>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noreferrer">Démo</a>
+            <a href="#" target="_blank" rel="noreferrer">Code</a>
+          </div>
+        </article>
+
+        <article class="card project">
+          <h3>Site Restaurant</h3>
+          <p>Page responsive avec menu, horaires, formulaire de contact.</p>
+          <div class="tags">
+            <span class="tag">Responsive</span><span class="tag">CSS</span>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noreferrer">Démo</a>
+            <a href="#" target="_blank" rel="noreferrer">Code</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section alt">
+    <div class="container">
+      <h2>Expérience</h2>
+
+      <div class="timeline">
+        <div class="item">
+          <div class="dot"></div>
+          <div class="content card">
+            <h3>Projet / Stage - Entreprise</h3>
+            <p class="muted">2025 - 2026</p>
+            <ul class="list">
+              <li>Création de pages web responsive</li>
+              <li>Intégration HTML/CSS + interactions JS</li>
+              <li>Travail en équipe / Git</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="dot"></div>
+          <div class="content card">
+            <h3>Expérience précédente</h3>
+            <p class="muted">2024 - 2025</p>
+            <p>Décris ici en 2-3 lignes ce que tu faisais (même si ce n’est pas du web).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="section">
+    <div class="container">
+      <h2>Formation</h2>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>Formation Développement Web</h3>
+          <p class="muted">2025 - 2026</p>
+          <ul class="list">
+            <li>HTML / CSS / JavaScript</li>
+            <li>Notions Backend (ex: Symfony / Node)</li>
+            <li>Projets pratiques</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Certifications</h3>
+          <p class="muted">Optionnel</p>
+          <ul class="list">
+            <li>OpenClassrooms / Udemy / etc.</li>
+            <li>Certif Git / JS…</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section alt">
+    <div class="container">
+      <h2>Contact</h2>
+      <p class="lead">Formulaire simple (demo). Tu peux aussi mettre juste tes liens.</p>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>Mes infos</h3>
+          <ul class="list">
+            <li>📧 prenom.nom@email.com</li>
+            <li>📱 +32 000 00 00 00</li>
+            <li>💼 linkedin.com/in/tonprofil</li>
+            <li>🐙 github.com/tonpseudo</li>
+          </ul>
+        </div>
+
+        <form class="card form" id="contactForm">
+          <label>
+            Nom
+            <input type="text" id="name" placeholder="Ton nom" required />
+          </label>
+
+          <label>
+            Email
+            <input type="email" id="email" placeholder="ton@email.com" required />
+          </label>
+
+          <label>
+            Message
+            <textarea id="message" rows="5" placeholder="Ton message..." required></textarea>
+          </label>
+
+          <button class="btn primary" type="submit">Envoyer</button>
+          <p class="muted small" id="formStatus"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <span>© <span id="year"></span> Prénom Nom</span>
+      <a href="#home" class="back-top" id="backTop">↑ Retour en haut</a>
+    </div>
+  </footer>
+</body>
+</html>
