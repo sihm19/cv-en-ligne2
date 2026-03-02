@@ -47,6 +47,7 @@
         <div class="hero-actions">
           <a class="btn primary" href="#contact">Me contacter</a>
           <a class="btn" href="#projects">Voir mes projets</a>
+          <a class="btn" href="cv">voir mon cv</a>
         </div>
 
         <div class="hero-info">
@@ -191,31 +192,25 @@
         <section id="experiences" class="page">
           <h3>Expériences</h3>
 
-          <div class="timeline">
-            <div class="timeline-item">
-              <div class="dot"></div>
-              <div class="timeline-content">
-                <span class="date">2024</span>
-                <h4>Stage Développement Web</h4>
-                <p>Création de pages web, intégration, améliorations UI, projets en équipe.</p>
+          <div class="experience-container">
+            <div class="experience-card">
+              <h4>Stage Développement Web</h4>
+              <div class="experience-date">2024</div>
+              <p>Création de pages web, intégration, améliorations UI, projets en équipe.</p>
               </div>
             </div>
 
-            <div class="timeline-item">
-              <div class="dot"></div>
-              <div class="timeline-content">
-                <span class="date">2023</span>
-                <h4>Projets personnels</h4>
-                <p>Portfolio, applications JS, mini-projets, apprentissage Symfony.</p>
+            <div class="experience-card">
+              <div class="experience-date">2023</div>
+              <h4>Projets personnels</h4>
+              <p>Portfolio, applications JS, mini-projets, apprentissage Symfony.</p>
               </div>
             </div>
 
-            <div class="timeline-item">
-              <div class="dot"></div>
-              <div class="timeline-content">
-                <span class="date">2022</span>
-                <h4>Formation Web</h4>
-                <p>HTML/CSS, bases de JS, bases de données, projets guidés.</p>
+            <div class="experience-card">
+              <div class="experience-date">2022</div>
+              <h4>Formation Web</h4>
+              <p>HTML/CSS, bases de JS, bases de données, projets guidés.</p>
               </div>
             </div>
           </div>
@@ -224,8 +219,6 @@
   <section id="projects" class="section">
     <div class="container">
       <h2>Projets</h2>
-      <p class="lead">3 exemples (remplace par tes vrais projets).</p>
-
       <div class="grid-3">
         <article class="card project">
           <h3>Portfolio</h3>
@@ -342,15 +335,12 @@
   <section id="contact" class="section alt">
     <div class="container">
       <h2>Contact</h2>
-      <p class="lead">Formulaire simple (demo). Tu peux aussi mettre juste tes liens.</p>
-
       <div class="grid-2">
         <div class="card">
           <h3>Mes infos</h3>
           <ul class="list">
             <li>📧 Amarouchi.sihame@email.com</li>
-            <li>📱 +32 486 79 96 18</li>
-            <li>💼 linkedin.com/in/tonprofil</li>
+            <li>💼 linkedin.com/in/sihame-amarouchi</li>
             <li>🐙 github.com/Sihm19</li>
           </ul>
         </div>
@@ -358,17 +348,17 @@
         <form class="card form" id="contactForm">
           <label>
             Nom
-            <input type="text" id="name" placeholder="Ton nom" required />
+            <input type="text" id="name" required />
           </label>
 
           <label>
             Email
-            <input type="email" id="email" placeholder="ton@email.com" required />
+            <input type="email" id="email" required />
           </label>
 
           <label>
             Message
-            <textarea id="message" rows="5" placeholder="Ton message..." required></textarea>
+            <textarea id="message" rows="5" placeholder="message..." required></textarea>
           </label>
 
           <button class="btn primary" type="submit">Envoyer</button>
@@ -380,7 +370,7 @@
 
   <footer class="footer">
     <div class="container footer-row">
-      <span>© <span id="year"></span> Prénom Nom</span>
+      <span>© <span id="year"></span> Sihame Amarouchi</span>
       <a href="#home" class="back-top" id="backTop">↑ Retour en haut</a>
     </div>
   </footer>
