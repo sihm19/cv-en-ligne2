@@ -47,6 +47,7 @@
         <div class="hero-actions">
           <a class="btn primary" href="#contact">Me contacter</a>
           <a class="btn" href="#projects">Voir mes projets</a>
+          <a class="btn primary" href="cv-amarouchi sihame.pdf" download>Mon CV</a>
         </div>
 
         <div class="hero-info">
@@ -183,65 +184,64 @@
     </div>
   </div>
 </section>
-
-          <p class="hint">💡 Survole une carte pour voir le détail.</p>
         </section>
 
-        <!-- EXPERIENCES -->
-        <section id="experiences" class="page">
-          <h3>Expériences</h3>
+       <section id="experiences" class="page">
+  <div class="container">
+    <h3>Expériences</h3>
 
-          <div class="timeline">
-            <div class="timeline-item">
-              <div class="dot"></div>
-              <div class="timeline-content">
-                <span class="date">2024</span>
-                <h4>Stage Développement Web</h4>
-                <p>Création de pages web, intégration, améliorations UI, projets en équipe.</p>
-              </div>
-            </div>
+    <div class="timeline">
 
-            <div class="timeline-item">
-              <div class="dot"></div>
-              <div class="timeline-content">
-                <span class="date">2023</span>
-                <h4>Projets personnels</h4>
-                <p>Portfolio, applications JS, mini-projets, apprentissage Symfony.</p>
-              </div>
-            </div>
+      <div class="item">
+        <div class="dot"></div>
+        <div class="content card">
+          <span class="date">2024</span>
+          <h4>Stage Développement Web</h4>
+          <p>Création de pages web, intégration, améliorations UI et participation à des projets en équipe.</p>
+        </div>
+      </div>
 
-            <div class="timeline-item">
-              <div class="dot"></div>
-              <div class="timeline-content">
-                <span class="date">2022</span>
-                <h4>Formation Web</h4>
-                <p>HTML/CSS, bases de JS, bases de données, projets guidés.</p>
-              </div>
-            </div>
-          </div>
-        </section>
+      <div class="item">
+        <div class="dot"></div>
+        <div class="content card">
+          <span class="date">2023</span>
+          <h4>Projets personnels</h4>
+          <p>Création d’un portfolio, développement d’applications JavaScript, mini-projets et apprentissage de Symfony.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="dot"></div>
+        <div class="content card">
+          <span class="date">2022</span>
+          <h4>Formation Web</h4>
+          <p>Apprentissage du HTML, CSS, bases de JavaScript, bases de données et réalisation de projets guidés.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
   <section id="projects" class="section">
     <div class="container">
       <h2>Projets</h2>
-      <p class="lead">3 exemples (remplace par tes vrais projets).</p>
-
       <div class="grid-3">
         <article class="card project">
           <h3>Portfolio</h3>
-          <p>Un site vitrine pour présenter mes projets et mon profil.</p>
+          <p>projet Php : site recette de cuisine</p>
           <div class="tags">
             <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
           </div>
           <div class="project-links">
             <a href="#" target="_blank" rel="noreferrer">Démo</a>
-            <a href="#" target="_blank" rel="noreferrer">Code</a>
+            <a href="#" target="_blank" rel="noreferrer">GitHub</a>
           </div>
         </article>
 
         <article class="card project">
-          <h3>App To-Do</h3>
-          <p>Ajout, suppression et sauvegarde des tâches (localStorage).</p>
+          <h3>Hackathon</h3>
+          <p>Participation à un hackathon de 24h, développement d'une application web en équipe.</p>
           <div class="tags">
             <span class="tag">JavaScript</span><span class="tag">UI</span>
           </div>
@@ -326,7 +326,7 @@
           <p class="muted"><span class="blod">Haute école en Hainaut</span></p>
         </div>
 
-          <div class="grid-2">
+        <div class="grid-2">
         <div class="card">
           <h3>comptabilité</h3>
           <p class="muted">Septembre 2015 > Juillet 2018</p>
@@ -339,48 +339,48 @@
         
   </section>
 
-  <section id="contact" class="section alt">
-    <div class="container">
-      <h2>Contact</h2>
-      <p class="lead">Formulaire simple (demo). Tu peux aussi mettre juste tes liens.</p>
+<section id="contact" class="section alt">
+  <div class="container">
+    <h2>Contact</h2>
+    <div class="contact-card">
 
-      <div class="grid-2">
-        <div class="card">
-          <h3>Mes infos</h3>
-          <ul class="list">
-            <li>📧 Amarouchi.sihame@email.com</li>
-            <li>📱 +32 486 79 96 18</li>
-            <li>💼 linkedin.com/in/tonprofil</li>
-            <li>🐙 github.com/Sihm19</li>
-          </ul>
-        </div>
-
-        <form class="card form" id="contactForm">
-          <label>
-            Nom
-            <input type="text" id="name" placeholder="Ton nom" required />
-          </label>
-
-          <label>
-            Email
-            <input type="email" id="email" placeholder="ton@email.com" required />
-          </label>
-
-          <label>
-            Message
-            <textarea id="message" rows="5" placeholder="Ton message..." required></textarea>
-          </label>
-
-          <button class="btn primary" type="submit">Envoyer</button>
-          <p class="muted small" id="formStatus"></p>
-        </form>
-      </div>
+      <ul class="contact-list">
+        <li>
+          📧 Email :
+          <a href="mailto:amarouchi.sihame@gmail.com">
+            amarouchi.sihame@gmail.com
+          </a>
+        </li>
+        <li>
+          📱 Téléphone :
+          <a href="tel:+32486799618">
+            +32 486 79 96 18
+          </a>
+        </li>
+        <li>
+          💼 LinkedIn :
+          <a href="https://www.linkedin.com/in/sihame-amarouchi/" target="_blank">
+            linkedin.com/in/sihame-amarouchi
+          </a>
+        </li>
+        <li>
+          🐙 GitHub :
+          <a href="https://github.com/Sihm19" target="_blank">
+            github.com/Sihm19
+          </a>
+        </li>
+        <li>
+          📄 CV :
+          <a href="cv-amarouchi sihame.pdf" download>📄 Télécharger mon CV</a>
+        </li>
+      </ul>
     </div>
-  </section>
+  </div>
+</section>
 
   <footer class="footer">
     <div class="container footer-row">
-      <span>© <span id="year"></span> Prénom Nom</span>
+      <span>© <span id="year"></span> Sihame Amarouchi</span>
       <a href="#home" class="back-top" id="backTop">↑ Retour en haut</a>
     </div>
   </footer>

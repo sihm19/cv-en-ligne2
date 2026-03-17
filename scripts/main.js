@@ -56,16 +56,6 @@ function animateSkills() {
 window.addEventListener("scroll", animateSkills);
 window.addEventListener("load", animateSkills);
 
-// ====== Formulaire de contact (démo) ======
-const form = document.getElementById("contactForm");
-const statusEl = document.getElementById("formStatus");
-
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  const name = document.getElementById("name").value.trim();
-  const email = document.getElementById("email").value.trim();
-  const message = document.getElementById("message").value.trim();
 
   // Petite validation simple
   if (!name || !email || !message) {
@@ -73,9 +63,7 @@ form.addEventListener("submit", (e) => {
     return;
   }
 
-  // Démo: on n'envoie pas réellement (pas de backend)
-  statusEl.textContent = "✅ Message prêt à être envoyé (démo).";
 
   // Reset du formulaire
   form.reset();
-});
+

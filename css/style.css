@@ -391,25 +391,37 @@ h2{ font-size: 1.9rem; }
   background: linear-gradient(90deg, var(--accent), var(--accent2));
 }
 
-/* ========== Form ========== */
-.form label{
-  display: grid;
-  gap: 6px;
-  margin-bottom: 12px;
-  color: var(--muted);
-}
-input, textarea{
-  width: 100%;
-  padding: 10px 12px;
-  border-radius: 14px;
+/* ===== Contact ===== */
+
+.contact-card{
+  margin-top: 30px;
+  background: var(--card);
   border: 1px solid var(--border);
-  background: rgba(255,255,255,0.06);
-  color: var(--text);
-  outline: none;
+  border-radius: var(--radius);
+  padding: 30px;
 }
-input:focus, textarea:focus{
-  border-color: rgba(160,205,251,0.8);
+
+.contact-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
+
+.contact-list li{
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.contact-list a{
+  color: var(--accent);
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.contact-list a:hover{
+  text-decoration: underline;
+}
+
 
 /* ========== Footer ========== */
 .footer{
